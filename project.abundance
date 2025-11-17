@@ -103,8 +103,8 @@
     {
       "atomType": "Difference",
       "name": "Difference",
-      "x": 0.6486915146708961,
-      "y": 0.4409937888198758,
+      "x": 0.6445959104186952,
+      "y": 0.42857142857142855,
       "uniqueID": "id-199",
       "ioValues": []
     },
@@ -117,11 +117,13 @@
       "ioValues": [
         {
           "name": "Tool Size",
-          "ioValue": 1
+          "ioValue": 0.25,
+          "currentEquation": ".25"
         },
         {
           "name": "Passes",
-          "ioValue": 5
+          "ioValue": 3,
+          "currentEquation": "3"
         },
         {
           "name": "Speed",
