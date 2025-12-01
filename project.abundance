@@ -7,13 +7,11 @@
   "ioValues": [
     {
       "name": "wood",
-      "ioValue": 5,
-      "currentEquation": "5"
+      "ioValue": 5
     },
     {
       "name": "plastic",
-      "ioValue": 2,
-      "currentEquation": "2"
+      "ioValue": 2
     }
   ],
   "topLevel": true,
@@ -27,7 +25,7 @@
     {
       "atomType": "Input",
       "x": 0.0264,
-      "y": 0.2981366459627329,
+      "y": 0.16,
       "uniqueID": "id-366",
       "name": "wood",
       "type": "number"
@@ -35,36 +33,31 @@
     {
       "atomType": "Input",
       "x": 0.0264,
-      "y": 0.4472049689440994,
+      "y": 0.24,
       "uniqueID": "id-369",
       "name": "plastic",
       "type": "number"
     },
     {
       "atomType": "Rectangle",
-      "x": 0.2947080291970803,
-      "y": 0.4161490683229814,
-      "uniqueID": "id-398",
+      "x": 0.39324817518248173,
+      "y": 0.5124223602484472,
+      "uniqueID": "id-409",
       "ioValues": [
         {
           "name": "x length",
-          "ioValue": 51,
+          "ioValue": 5,
           "currentEquation": "wood"
         },
         {
           "name": "y length",
-          "ioValue": 10
+          "ioValue": 2,
+          "currentEquation": "plastic"
         }
       ]
     }
   ],
-  "allConnectors": [
-    {
-      "ap2Name": "number or geometry",
-      "ap1ID": "id-398",
-      "ap2ID": "d3e25771-0f7c-4215-a122-f7c1045f96fc"
-    }
-  ],
+  "allConnectors": [],
   "unitsKey": "MM",
   "fileTypeVersion": 1,
   "filetypeVersion": 1
