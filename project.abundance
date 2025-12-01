@@ -7,12 +7,13 @@
   "ioValues": [
     {
       "name": "wood",
-      "ioValue": 10,
-      "currentEquation": "10"
+      "ioValue": 50,
+      "currentEquation": "50"
     },
     {
       "name": "plastic",
-      "ioValue": 2
+      "ioValue": 20,
+      "currentEquation": "20"
     }
   ],
   "topLevel": true,
@@ -26,7 +27,7 @@
     {
       "atomType": "Input",
       "x": 0.0264,
-      "y": 0.7391304347826086,
+      "y": 0.6459627329192547,
       "uniqueID": "id-366",
       "name": "wood",
       "type": "number"
@@ -41,24 +42,47 @@
     },
     {
       "atomType": "Rectangle",
-      "x": 0.39324817518248173,
-      "y": 0.515527950310559,
-      "uniqueID": "id-420",
+      "x": 0.39963503649635035,
+      "y": 0.48757763975155277,
+      "uniqueID": "id-431",
       "ioValues": [
         {
           "name": "x length",
-          "ioValue": 10,
+          "ioValue": 50,
           "currentEquation": "wood"
         },
         {
           "name": "y length",
-          "ioValue": 2,
-          "currentEquation": "plastic"
+          "ioValue": 30,
+          "currentEquation": "plastic + 10"
+        }
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.5739051094890512,
+      "y": 0.5279503105590062,
+      "uniqueID": "id-435",
+      "ioValues": [
+        {
+          "name": "height",
+          "ioValue": 10
         }
       ]
     }
   ],
-  "allConnectors": [],
+  "allConnectors": [
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-431",
+      "ap2ID": "id-435"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-435",
+      "ap2ID": "d3e25771-0f7c-4215-a122-f7c1045f96fc"
+    }
+  ],
   "unitsKey": "MM",
   "fileTypeVersion": 1,
   "filetypeVersion": 1
