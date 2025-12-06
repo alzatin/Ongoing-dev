@@ -8,10 +8,6 @@
     {
       "name": "wood",
       "ioValue": 1
-    },
-    {
-      "name": "z",
-      "ioValue": 1
     }
   ],
   "topLevel": true,
