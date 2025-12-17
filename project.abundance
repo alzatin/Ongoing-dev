@@ -1,178 +1,114 @@
 {
-    "atomType": "Molecule",
-    "x": 0,
-    "y": 0,
-    "uniqueID": "01e278b0-4910-484c-bdc0-8458b001eb66",
-    "name": "A_really_really_really_really_really_really_really_really_longname",
-    "ioValues": [
+  "atomType": "Molecule",
+  "x": 0,
+  "y": 0,
+  "uniqueID": "01e278b0-4910-484c-bdc0-8458b001eb66",
+  "name": "A_really_really_really_really_really_really_really_really_longname",
+  "ioValues": [
+    {
+      "name": "wood",
+      "ioValue": 10
+    }
+  ],
+  "topLevel": true,
+  "allAtoms": [
+    {
+      "atomType": "Output",
+      "x": 0.98,
+      "y": 0.5,
+      "uniqueID": "d3e25771-0f7c-4215-a122-f7c1045f96fc"
+    },
+    {
+      "atomType": "Rectangle",
+      "x": 0.20266666666666666,
+      "y": 0.3595166163141994,
+      "uniqueID": "1b9e4495-2958-490f-b191-17e032057477",
+      "ioValues": [
         {
-            "name": "wood",
-            "ioValue": 10
+          "name": "x length",
+          "ioValue": 20
+        },
+        {
+          "name": "y length",
+          "ioValue": 50
         }
-    ],
-    "topLevel": true,
-    "allAtoms": [
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.33599999999999997,
+      "y": 0.7885196374622356,
+      "uniqueID": "id-130",
+      "ioValues": [
         {
-            "atomType": "Output",
-            "x": 0.98,
-            "y": 0.5,
-            "uniqueID": "d3e25771-0f7c-4215-a122-f7c1045f96fc"
-        },
-        {
-            "atomType": "Rectangle",
-            "x": 0.20266666666666666,
-            "y": 0.3595166163141994,
-            "uniqueID": "1b9e4495-2958-490f-b191-17e032057477",
-            "ioValues": [
-                {
-                    "name": "x length",
-                    "ioValue": 20
-                },
-                {
-                    "name": "y length",
-                    "ioValue": 50,
-                    "currentEquation": "50"
-                }
-            ]
-        },
-        {
-            "atomType": "Extrude",
-            "x": 0.33599999999999997,
-            "y": 0.7885196374622356,
-            "uniqueID": "id-130",
-            "ioValues": [
-                {
-                    "name": "height",
-                    "ioValue": 5
-                }
-            ]
-        },
-        {
-            "atomType": "Gcode",
-            "x": 0.7060402684563759,
-            "y": 0.48447204968944096,
-            "uniqueID": "id-314",
-            "ioValues": [
-                {
-                    "name": "Tool Size",
-                    "ioValue": 6.35
-                },
-                {
-                    "name": "Passes",
-                    "ioValue": 2
-                },
-                {
-                    "name": "Speed",
-                    "ioValue": 1500
-                },
-                {
-                    "name": "Cut Through",
-                    "ioValue": 0.25
-                },
-                {
-                    "name": "Part Name",
-                    "ioValue": "Molecule",
-                    "currentEquation": "Molecule"
-                }
-            ],
-            "partName": "Molecule",
-            "sortDirection": "Left"
-        },
-        {
-            "atomType": "Input",
-            "x": 0.0264,
-            "y": 0.16,
-            "uniqueID": "id-361",
-            "name": "wood",
-            "type": "number"
-        },
-        {
-            "atomType": "Rectangle",
-            "x": 0.212,
-            "y": 0.6918429003021148,
-            "uniqueID": "id-858",
-            "ioValues": [
-                {
-                    "name": "x length",
-                    "ioValue": 20,
-                    "currentEquation": "20"
-                },
-                {
-                    "name": "y length",
-                    "ioValue": 5
-                }
-            ]
-        },
-        {
-            "atomType": "Gcode",
-            "x": 0.5583892617449665,
-            "y": 0.7236024844720497,
-            "uniqueID": "id-860",
-            "ioValues": [
-                {
-                    "name": "Tool Size",
-                    "ioValue": 6.35
-                },
-                {
-                    "name": "Passes",
-                    "ioValue": 2
-                },
-                {
-                    "name": "Speed",
-                    "ioValue": 1500
-                },
-                {
-                    "name": "Cut Through",
-                    "ioValue": 0.25
-                },
-                {
-                    "name": "Part Name",
-                    "ioValue": "Molecule",
-                    "currentEquation": "Molecule"
-                }
-            ],
-            "partName": "Molecule",
-            "sortDirection": "Left"
-        },
-        {
-            "atomType": "Extrude",
-            "x": 0.4253472222222222,
-            "y": 0.4259818731117825,
-            "uniqueID": "id-903",
-            "ioValues": [
-                {
-                    "name": "height",
-                    "ioValue": 10
-                }
-            ]
-        },
-        {
-            "atomType": "Code",
-            "x": 0.5729166666666667,
-            "y": 0.38368580060422963,
-            "uniqueID": "id-907",
-            "codeVersion": 1,
-            "code": "Inputs = [\n       {inputName: \"A\", type: \"geometry\", defaultValue: null},\n        {inputName: \"B\", type: \"geometry\", defaultValue: null}\n      ]\n      //This defines the molecules inputs and creates variables with the same names which can be referenced in the code\n\n      let boundsA = await GetBounds(A);\n      let A_minZ = boundsA.min[2];\n\n      let B_maxZ = 0;\n      if(B){\n          let boundsB = await GetBounds(B);\n          console.log(\"Bounding Box B:  \");\n          console.log(boundsB);\n          B_maxZ  = boundsB.max[2];\n      }\n\n     let translationZ = B_maxZ - A_minZ;\n     \n      let movedOutput = await Move(A, 0, 0, translationZ);\n\n      return movedOutput;"
+          "name": "height",
+          "ioValue": 5
         }
-    ],
-    "allConnectors": [
+      ]
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0264,
+      "y": 0.16,
+      "uniqueID": "id-361",
+      "name": "wood",
+      "type": "number"
+    },
+    {
+      "atomType": "Rectangle",
+      "x": 0.212,
+      "y": 0.6918429003021148,
+      "uniqueID": "id-858",
+      "ioValues": [
         {
-            "ap2Name": "geometry",
-            "ap1ID": "1b9e4495-2958-490f-b191-17e032057477",
-            "ap2ID": "id-903"
+          "name": "x length",
+          "ioValue": 20
         },
         {
-            "ap2Name": "geometry",
-            "ap1ID": "id-858",
-            "ap2ID": "id-130"
-        },
-        {
-            "ap2Name": "A",
-            "ap1ID": "id-903",
-            "ap2ID": "id-907"
+          "name": "y length",
+          "ioValue": 5
         }
-    ],
-    "unitsKey": "MM",
-    "fileTypeVersion": 1,
-    "filetypeVersion": 1
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.4253472222222222,
+      "y": 0.4259818731117825,
+      "uniqueID": "id-903",
+      "ioValues": [
+        {
+          "name": "height",
+          "ioValue": 10
+        }
+      ]
+    },
+    {
+      "atomType": "Code",
+      "x": 0.5729166666666667,
+      "y": 0.38368580060422963,
+      "uniqueID": "id-907",
+      "codeVersion": 1,
+      "code": "Inputs = [\n       {inputName: \"A\", type: \"geometry\", defaultValue: null},\n        {inputName: \"B\", type: \"geometry\", defaultValue: null}\n      ]\n      //This defines the molecules inputs and creates variables with the same names which can be referenced in the code\n\n      let boundsA = await GetBounds(A);\n      let A_minZ = boundsA.min[2];\n\n      let B_maxZ = 0;\n      if(B){\n          let boundsB = await GetBounds(B);\n          console.log(\"Bounding Box B:  \");\n          console.log(boundsB);\n          B_maxZ  = boundsB.max[2];\n      }\n\n     let translationZ = B_maxZ - A_minZ;\n     \n      let movedOutput = await Move(A, 0, 0, translationZ);\n\n      return movedOutput;"
+    }
+  ],
+  "allConnectors": [
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "1b9e4495-2958-490f-b191-17e032057477",
+      "ap2ID": "id-903"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-858",
+      "ap2ID": "id-130"
+    },
+    {
+      "ap2Name": "A",
+      "ap1ID": "id-903",
+      "ap2ID": "id-907"
+    }
+  ],
+  "unitsKey": "MM",
+  "fileTypeVersion": 1,
+  "filetypeVersion": 1
 }
