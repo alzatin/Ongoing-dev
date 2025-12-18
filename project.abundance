@@ -7,7 +7,7 @@
   "ioValues": [
     {
       "name": "wood",
-      "ioValue": 15
+      "ioValue": 10
     }
   ],
   "topLevel": true,
@@ -44,8 +44,8 @@
     },
     {
       "atomType": "Extrude",
-      "x": 0.5424063116370809,
-      "y": 0.3504531722054381,
+      "x": 0.606508875739645,
+      "y": 0.24471299093655588,
       "uniqueID": "id-903",
       "ioValues": [
         {
@@ -72,8 +72,8 @@
     },
     {
       "atomType": "Extrude",
-      "x": 0.497907949790795,
-      "y": 0.7009063444108762,
+      "x": 0.5739644970414202,
+      "y": 0.8096676737160121,
       "uniqueID": "id-929",
       "ioValues": [
         {
@@ -84,8 +84,8 @@
     },
     {
       "atomType": "Rectangle",
-      "x": 0.34516765285996054,
-      "y": 0.5709969788519638,
+      "x": 0.29980276134122286,
+      "y": 0.5015105740181269,
       "uniqueID": "id-948",
       "ioValues": [
         {
@@ -112,53 +112,13 @@
     },
     {
       "atomType": "Assembly",
-      "x": 0.7337278106508877,
-      "y": 0.4199395770392749,
+      "x": 0.8106508875739645,
+      "y": 0.4501510574018127,
       "uniqueID": "id-974",
-      "ioValues": [
-        {
-          "name": "Shape 1",
-          "ioValue": null
-        },
-        {
-          "name": "Shape 2",
-          "ioValue": null
-        }
-      ]
+      "ioValues": []
     }
   ],
-  "allConnectors": [
-    {
-      "ap2Name": "geometry",
-      "ap1ID": "1b9e4495-2958-490f-b191-17e032057477",
-      "ap2ID": "id-903"
-    },
-    {
-      "ap2Name": "Shape 2",
-      "ap1ID": "id-903",
-      "ap2ID": "id-974"
-    },
-    {
-      "ap2Name": "geometry",
-      "ap1ID": "id-928",
-      "ap2ID": "id-929"
-    },
-    {
-      "ap2Name": "geometry",
-      "ap1ID": "id-948",
-      "ap2ID": "id-949"
-    },
-    {
-      "ap2Name": "Shape 1",
-      "ap1ID": "id-949",
-      "ap2ID": "id-974"
-    },
-    {
-      "ap2Name": "number or geometry",
-      "ap1ID": "id-974",
-      "ap2ID": "d3e25771-0f7c-4215-a122-f7c1045f96fc"
-    }
-  ],
+  "allConnectors": [],
   "unitsKey": "MM",
   "fileTypeVersion": 1,
   "filetypeVersion": 1
