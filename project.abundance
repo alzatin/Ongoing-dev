@@ -7,8 +7,7 @@
   "ioValues": [
     {
       "name": "Pivotno",
-      "ioValue": 50,
-      "currentEquation": "50"
+      "ioValue": 50
     }
   ],
   "topLevel": true,
@@ -22,7 +21,7 @@
     {
       "atomType": "Input",
       "x": 0.0264,
-      "y": 0.4108761329305136,
+      "y": 0.16,
       "uniqueID": "id-1619",
       "name": "Pivotno",
       "type": "number"
@@ -39,8 +38,7 @@
         },
         {
           "name": "y length",
-          "ioValue": 10,
-          "currentEquation": "10"
+          "ioValue": 10
         }
       ]
     },
@@ -336,8 +334,8 @@
     },
     {
       "atomType": "GitHubMolecule",
-      "x": 0.5444874274661509,
-      "y": 0.552870090634441,
+      "x": 0.5435203094777563,
+      "y": 0.5740181268882175,
       "uniqueID": "id-2873",
       "name": "Mirror",
       "ioValues": [
@@ -603,14 +601,15 @@
     },
     {
       "atomType": "GitHubMolecule",
-      "x": 0.6982591876208897,
-      "y": 0.19637462235649547,
+      "x": 0.7427466150870405,
+      "y": 0.29003021148036257,
       "uniqueID": "id-2912",
       "name": "Mirror",
       "ioValues": [
         {
           "name": "Pivot",
-          "ioValue": 90
+          "ioValue": 50,
+          "currentEquation": "Pivotno"
         },
         {
           "name": "Plane",
@@ -762,7 +761,7 @@
           "ioValues": [
             {
               "name": "pivot",
-              "ioValue": 90
+              "ioValue": 50
             },
             {
               "name": "plane",
