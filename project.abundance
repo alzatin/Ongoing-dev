@@ -8,6 +8,10 @@
     {
       "name": "Pivotno",
       "ioValue": 48
+    },
+    {
+      "name": "geom",
+      "ioValue": 10
     }
   ],
   "topLevel": true,
@@ -56,8 +60,8 @@
     },
     {
       "atomType": "Rectangle",
-      "x": 0.2658126501200961,
-      "y": 0.5226586102719033,
+      "x": 0.23698959167333866,
+      "y": 0.7039274924471299,
       "uniqueID": "id-3467",
       "ioValues": [
         {
@@ -72,8 +76,8 @@
     },
     {
       "atomType": "Extrude",
-      "x": 0.5036028823058446,
-      "y": 0.513595166163142,
+      "x": 0.5084067253803043,
+      "y": 0.5226586102719033,
       "uniqueID": "id-3468",
       "ioValues": [
         {
@@ -81,6 +85,14 @@
           "ioValue": 10
         }
       ]
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0264,
+      "y": 0.256,
+      "uniqueID": "id-3486",
+      "name": "geom",
+      "type": "geometry"
     }
   ],
   "allConnectors": [
@@ -95,14 +107,14 @@
       "ap2ID": "id-1667"
     },
     {
-      "ap2Name": "geometry",
-      "ap1ID": "id-3467",
-      "ap2ID": "id-3468"
-    },
-    {
       "ap2Name": "number or geometry",
       "ap1ID": "id-3468",
       "ap2ID": "d3e25771-0f7c-4215-a122-f7c1045f96fc"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-3486",
+      "ap2ID": "id-3468"
     }
   ],
   "unitsKey": "MM",
