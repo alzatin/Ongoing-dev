@@ -276,8 +276,7 @@
             },
             {
               "name": "plane",
-              "ioValue": "X",
-              "currentEquation": "X"
+              "ioValue": "X"
             }
           ],
           "codeVersion": 1,
@@ -993,6 +992,11 @@
       "ap2Name": "Shape",
       "ap1ID": "id-1667",
       "ap2ID": "id-3706"
+    },
+    {
+      "ap2Name": "Shape",
+      "ap1ID": "id-1667",
+      "ap2ID": "id-3758"
     },
     {
       "ap2Name": "number or geometry",
